@@ -88,3 +88,6 @@ plt.title('Decision Tree for Predicting Customer Churn')
 plt.show()
 
 ```
+
+# Result
+
