@@ -91,7 +91,7 @@ plt.show()
 
 # Result
 
-![jenkins_](image6.png)
+![jenkins_](Image6.png)
 
 ![jenkins_](image7.png)
 
