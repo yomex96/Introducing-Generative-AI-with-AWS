@@ -1,10 +1,11 @@
 # Part 1: Predicting Building Energy Efficiency (Supervised Learning)
 Scenario - You are working for an architecture firm, and your task is to build a model that predicts the energy efficiency rating of buildings based on features like wall area, roof area, overall height, etc.
 
-## Step to   follow
+
 
 # Supervised Learning Code: To predict the energy efficiency of buildings.
 
+## Step to   follow
 
 ## Import necessary libraries
 import pandas as pd
