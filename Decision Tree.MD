@@ -91,3 +91,8 @@ plt.show()
 
 # Result
 
+![jenkins_](image6.png)
+
+![jenkins_](image7.png)
+
+![jenkins_](image8.png)
