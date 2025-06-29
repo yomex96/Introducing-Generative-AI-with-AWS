@@ -59,3 +59,6 @@ plt.ylabel("Predictions")
 plt.title("True Values vs Predicted Values")
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--')
 plt.show()
+
+
+# RESULT 
