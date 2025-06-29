@@ -7,6 +7,7 @@ Scenario - You are working for an architecture firm, and your task is to build a
 
 ## Step to   follow
 
+```
 ## Import necessary libraries
 import pandas as pd
 import numpy as np
@@ -16,6 +17,7 @@ import warnings
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.metrics import mean_squared_error
+
 
 warnings.filterwarnings('ignore')
 
@@ -60,6 +62,7 @@ plt.title("True Values vs Predicted Values")
 plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--')
 plt.show()
 
+```
 
 # RESULT 
 
