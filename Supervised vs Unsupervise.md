@@ -1,10 +1,10 @@
-## Part 1: Predicting Building Energy Efficiency (Supervised Learning)
+# Part 1: Predicting Building Energy Efficiency (Supervised Learning)
 Scenario - You are working for an architecture firm, and your task is to build a model that predicts the energy efficiency rating of buildings based on features like wall area, roof area, overall height, etc.
 
-## Supervised Learning Code: To predict the energy efficiency of buildings.
+# Supervised Learning Code: To predict the energy efficiency of buildings.
 
 
-# Import necessary libraries
+## Import necessary libraries
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -16,7 +16,7 @@ from sklearn.metrics import mean_squared_error
 
 warnings.filterwarnings('ignore')
 
-# Generate synthetic dataset for building features and energy efficiency ratings
+## Generate synthetic dataset for building features and energy efficiency ratings
 np.random.seed(0)
 data_size = 500
 data = {
@@ -28,27 +28,27 @@ data = {
 }
 df = pd.DataFrame(data)
 
-# Data preprocessing
+## Data preprocessing
 X = df.drop('EnergyEfficiency', axis=1)
 y = df['EnergyEfficiency']
 
-# Visualize the relationships between features and the target variable (Energy Efficiency)
+## Visualize the relationships between features and the target variable (Energy Efficiency)
 sns.pairplot(df, x_vars=['WallArea', 'RoofArea', 'OverallHeight', 'GlazingArea'], y_vars='EnergyEfficiency', height=4, aspect=1, kind='scatter')
 plt.show()
 
-# Split the data into training and testing sets
+## Split the data into training and testing sets
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Train a Random Forest model
+## Train a Random Forest model
 model = RandomForestRegressor()
 model.fit(X_train, y_train)
 
-# Predict and evaluate
+## Predict and evaluate
 predictions = model.predict(X_test)
 mse = mean_squared_error(y_test, predictions)
 print(f"Mean Squared Error: {mse}")
 
-# Plot the True values vs Predicted values
+## Plot the True values vs Predicted values
 plt.figure(figsize=(10, 6))
 plt.scatter(y_test, predictions)
 plt.xlabel("True Values")
