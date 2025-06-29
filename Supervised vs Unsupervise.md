@@ -85,7 +85,7 @@ Scenario - You are working for an automotive company, and your task is to cluste
 
 Unsupervised Learning Code: To cluster vehicles based on their specifications.
 
-![jenkins_](Image4.png)
+![jenkins_](image4.png)
 
-![jenkins_](Image5.png)
+![jenkins_](image5.png)
 
